@@ -1,0 +1,30 @@
+{
+  "name": "@support-oss/crawler",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'No lint configured yet'",
+    "crawl:npm": "dotenv -e ../../.env -- tsx src/crawlers/npm.ts",
+    "crawl:oc": "dotenv -e ../../.env -- tsx src/crawlers/opencollective.ts",
+    "crawl:github": "dotenv -e ../../.env -- tsx src/crawlers/github.ts",
+    "import:high-impact": "dotenv -e ../../.env -- tsx src/import/high-impact.ts",
+    "import:curated": "dotenv -e ../../.env -- tsx src/import/curated-data.ts"
+  },
+  "dependencies": {
+    "@support-oss/db": "workspace:*",
+    "@support-oss/shared": "workspace:*",
+    "drizzle-orm": "^0.38.3",
+    "npm-high-impact": "^1.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "dotenv-cli": "^11.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

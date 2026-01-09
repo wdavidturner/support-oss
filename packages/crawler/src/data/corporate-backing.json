@@ -1,0 +1,87 @@
+{
+  "$schema": "./corporate-backing.schema.json",
+  "description": "Packages that are corporate-backed and do not need community funding",
+  "lastUpdated": "2025-01-08",
+  "packages": [
+    { "name": "react", "company": "Meta" },
+    { "name": "react-dom", "company": "Meta" },
+    { "name": "react-native", "company": "Meta" },
+    { "name": "jest", "company": "Meta" },
+    { "name": "hermes-engine", "company": "Meta" },
+    { "name": "flow-bin", "company": "Meta" },
+
+    { "name": "typescript", "company": "Microsoft" },
+    { "name": "@types/node", "company": "Microsoft" },
+    { "name": "vscode", "company": "Microsoft" },
+    { "name": "@azure/identity", "company": "Microsoft" },
+    { "name": "@azure/storage-blob", "company": "Microsoft" },
+    { "name": "playwright", "company": "Microsoft" },
+    { "name": "@playwright/test", "company": "Microsoft" },
+
+    { "name": "@angular/core", "company": "Google" },
+    { "name": "@angular/cli", "company": "Google" },
+    { "name": "@angular/common", "company": "Google" },
+    { "name": "@angular/router", "company": "Google" },
+    { "name": "@angular/forms", "company": "Google" },
+    { "name": "firebase", "company": "Google" },
+    { "name": "@google-cloud/storage", "company": "Google" },
+    { "name": "puppeteer", "company": "Google" },
+    { "name": "lighthouse", "company": "Google" },
+
+    { "name": "next", "company": "Vercel" },
+    { "name": "turbo", "company": "Vercel" },
+    { "name": "@vercel/analytics", "company": "Vercel" },
+    { "name": "swr", "company": "Vercel" },
+    { "name": "serve", "company": "Vercel" },
+    { "name": "@vercel/og", "company": "Vercel" },
+
+    { "name": "aws-sdk", "company": "Amazon" },
+    { "name": "@aws-sdk/client-s3", "company": "Amazon" },
+    { "name": "@aws-sdk/client-dynamodb", "company": "Amazon" },
+
+    { "name": "@prisma/client", "company": "Prisma" },
+    { "name": "prisma", "company": "Prisma" },
+
+    { "name": "@remix-run/react", "company": "Shopify" },
+    { "name": "@remix-run/node", "company": "Shopify" },
+    { "name": "@shopify/polaris", "company": "Shopify" },
+
+    { "name": "@redwoodjs/core", "company": "RedwoodJS (Tom Preston-Werner)" },
+
+    { "name": "@cloudflare/workers-types", "company": "Cloudflare" },
+    { "name": "wrangler", "company": "Cloudflare" },
+
+    { "name": "@supabase/supabase-js", "company": "Supabase" },
+
+    { "name": "@clerk/nextjs", "company": "Clerk" },
+
+    { "name": "@sentry/browser", "company": "Sentry" },
+    { "name": "@sentry/node", "company": "Sentry" },
+
+    { "name": "@stripe/stripe-js", "company": "Stripe" },
+    { "name": "stripe", "company": "Stripe" },
+
+    { "name": "@auth0/auth0-react", "company": "Auth0/Okta" },
+
+    { "name": "contentful", "company": "Contentful" },
+
+    { "name": "@sanity/client", "company": "Sanity" },
+
+    { "name": "@datadog/browser-rum", "company": "Datadog" },
+
+    { "name": "newrelic", "company": "New Relic" },
+
+    { "name": "@elastic/elasticsearch", "company": "Elastic" },
+
+    { "name": "mongodb", "company": "MongoDB" },
+    { "name": "mongoose", "company": "MongoDB" },
+
+    { "name": "@apollo/client", "company": "Apollo" },
+    { "name": "apollo-server", "company": "Apollo" },
+
+    { "name": "graphql", "company": "GraphQL Foundation" },
+
+    { "name": "@testing-library/react", "company": "Testing Library (funded)" },
+    { "name": "@testing-library/dom", "company": "Testing Library (funded)" }
+  ]
+}

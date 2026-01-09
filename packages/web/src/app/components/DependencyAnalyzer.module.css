@@ -1,0 +1,332 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.inputSection {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.inputHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.inputHeader h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.textarea {
+  min-height: 200px;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.budgetControl {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.budgetControl label {
+  color: var(--text-secondary);
+}
+
+.budgetInput {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.budgetInput span {
+  color: var(--text-secondary);
+}
+
+.error {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: rgba(239, 68, 68, 0.1);
+  border: 1px solid var(--critical);
+  border-radius: 8px;
+  color: var(--critical);
+  font-size: 0.875rem;
+}
+
+.results {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.summary {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.summary h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.summaryCard {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.summaryValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.summaryLabel {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-top: 0.25rem;
+}
+
+.categoryBreakdown {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.categoryBadge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 99px;
+  color: #000;
+}
+
+.allocation {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.allocation h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.allocationSubtitle {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  margin-bottom: 1.5rem;
+}
+
+.packageList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.packageCard {
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.packageHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.packageName {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+
+.version {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+.packageAmount {
+  text-align: right;
+}
+
+.amount {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--accent);
+  display: block;
+}
+
+.percentage {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.packageMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.category {
+  font-weight: 600;
+}
+
+.score,
+.downloads,
+.corporate {
+  color: var(--text-secondary);
+}
+
+.corporate {
+  background: rgba(139, 92, 246, 0.2);
+  padding: 0.125rem 0.5rem;
+  border-radius: 4px;
+  color: var(--corporate);
+}
+
+.reason {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+
+.funding {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  align-items: center;
+}
+
+.funding span {
+  color: var(--text-secondary);
+}
+
+.funding a {
+  background: var(--bg-secondary);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.noAllocation {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.noAllocation h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.noAllocation > p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.packageListCompact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.compactPackage {
+  background: var(--bg-tertiary);
+  padding: 0.375rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.compactCategory {
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.unknownPackages {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.5rem;
+}
+
+.unknownPackages h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.unknownPackages > p {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.unknownBadge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  border: 1px dashed var(--border);
+}
+
+.clickable {
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.clickable:hover {
+  background: var(--border);
+}

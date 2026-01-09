@@ -1,0 +1,26 @@
+{
+  "name": "@support-oss/api",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "dotenv -e ../../.env -- tsx watch src/index.ts",
+    "start": "dotenv -e ../../.env -- node dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo 'No lint configured yet'"
+  },
+  "dependencies": {
+    "@support-oss/db": "workspace:*",
+    "@support-oss/shared": "workspace:*",
+    "drizzle-orm": "^0.38.3",
+    "hono": "^4.6.16"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "dotenv-cli": "^11.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  }
+}

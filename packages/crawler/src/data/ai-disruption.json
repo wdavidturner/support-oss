@@ -1,0 +1,73 @@
+{
+  "$schema": "./ai-disruption.schema.json",
+  "description": "Packages whose business models are at risk due to AI tools",
+  "lastUpdated": "2025-01-08",
+  "packages": [
+    {
+      "name": "tailwindcss",
+      "disruptionType": "revenue_collapse",
+      "note": "AI can now generate high-quality UIs using Tailwind for free. Revenue from paid UI component kits (Tailwind UI) dropped significantly as AI tools like Claude and GPT can produce similar results.",
+      "source": "https://twitter.com/adamwathan/status/..."
+    },
+    {
+      "name": "@tailwindcss/typography",
+      "disruptionType": "revenue_collapse",
+      "note": "Part of Tailwind ecosystem affected by AI disruption to the core business model."
+    },
+    {
+      "name": "@tailwindcss/forms",
+      "disruptionType": "revenue_collapse",
+      "note": "Part of Tailwind ecosystem affected by AI disruption to the core business model."
+    },
+    {
+      "name": "daisyui",
+      "disruptionType": "competition",
+      "note": "Component library whose value proposition is reduced when AI can generate custom components directly."
+    },
+    {
+      "name": "headlessui",
+      "disruptionType": "competition",
+      "note": "Part of Tailwind Labs ecosystem, affected by broader AI disruption."
+    },
+    {
+      "name": "heroicons",
+      "disruptionType": "competition",
+      "note": "Part of Tailwind Labs ecosystem, affected by broader AI disruption."
+    },
+    {
+      "name": "prettier",
+      "disruptionType": "usage_decline",
+      "note": "AI-generated code often comes pre-formatted, reducing the need for separate formatting tools."
+    },
+    {
+      "name": "eslint",
+      "disruptionType": "usage_decline",
+      "note": "AI assistants catch many issues during generation that linters would have flagged. Still essential but usage patterns changing."
+    },
+    {
+      "name": "lodash",
+      "disruptionType": "usage_decline",
+      "note": "AI can generate equivalent utility functions inline, reducing dependency on utility libraries."
+    },
+    {
+      "name": "underscore",
+      "disruptionType": "usage_decline",
+      "note": "Similar to lodash - AI reduces need for utility libraries."
+    },
+    {
+      "name": "moment",
+      "disruptionType": "usage_decline",
+      "note": "AI often suggests native Date APIs or generates date handling code directly."
+    },
+    {
+      "name": "classnames",
+      "disruptionType": "usage_decline",
+      "note": "Simple enough that AI generates equivalent code inline rather than suggesting the package."
+    },
+    {
+      "name": "clsx",
+      "disruptionType": "usage_decline",
+      "note": "Simple enough that AI generates equivalent code inline rather than suggesting the package."
+    }
+  ]
+}
