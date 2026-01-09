@@ -178,8 +178,16 @@ export default function DependencyAnalyzer() {
     setError(null)
   }
 
+  function handleReset() {
+    setInput('')
+    setResults(null)
+    setError(null)
+    setSelectedPackage(null)
+  }
+
   return (
     <div className={styles.container}>
+      {!results && (
       <div className={styles.inputSection}>
         <div className={styles.inputHeader}>
           <h2>Paste Your Dependencies</h2>
@@ -215,44 +223,15 @@ export default function DependencyAnalyzer() {
         </div>
         {error && <div className={styles.error}>{error}</div>}
       </div>
+      )}
 
       {results && (
         <div className={styles.results}>
-          <div className={styles.summary}>
-            <h2>Analysis Summary</h2>
-            <div className={styles.summaryGrid}>
-              <div className={styles.summaryCard}>
-                <span className={styles.summaryValue}>{results.summary.total}</span>
-                <span className={styles.summaryLabel}>Total Packages</span>
-              </div>
-              <div className={styles.summaryCard}>
-                <span className={styles.summaryValue}>{results.summary.found}</span>
-                <span className={styles.summaryLabel}>In Database</span>
-              </div>
-              <div className={styles.summaryCard}>
-                <span className={styles.summaryValue}>{formatCurrency(results.budget)}</span>
-                <span className={styles.summaryLabel}>Monthly Budget</span>
-              </div>
-            </div>
-            <div className={styles.categoryBreakdown}>
-              {Object.entries(results.summary.byCategory).map(([category, count]) =>
-                count > 0 ? (
-                  <span
-                    key={category}
-                    className={styles.categoryBadge}
-                    style={{ backgroundColor: getCategoryColor(category) }}
-                  >
-                    {getCategoryLabel(category)}: {count}
-                  </span>
-                ) : null
-              )}
-            </div>
-          </div>
-
           <div className={styles.allocation}>
             <h2>Suggested Allocation</h2>
             <p className={styles.allocationSubtitle}>
-              Based on sustainability scores, here's where your donations would have the most impact.
+              Based on sustainability scores, here&apos;s how to distribute{' '}
+              <strong>{formatCurrency(results.budget)}/month</strong> across {results.summary.found} packages.
             </p>
             <div className={styles.packageList}>
               {results.packages
@@ -364,6 +343,12 @@ export default function DependencyAnalyzer() {
               </div>
             </div>
           )}
+
+          <div className={styles.resetSection}>
+            <button className={styles.resetButton} onClick={handleReset} type="button">
+              Analyze another project
+            </button>
+          </div>
         </div>
       )}
 

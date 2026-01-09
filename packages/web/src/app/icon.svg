@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Favicon: Green heart from the logo -->
+  <path
+    d="M 50 85
+       C 50 85, 10 53, 10 33
+       C 10 18, 24 9, 38 9
+       C 46 9, 50 16, 50 16
+       C 50 16, 54 9, 62 9
+       C 76 9, 90 18, 90 33
+       C 90 53, 50 85, 50 85 Z"
+    fill="#22c55e"
+  />
+</svg>

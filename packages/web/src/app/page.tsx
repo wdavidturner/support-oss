@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import DependencyAnalyzer from './components/DependencyAnalyzer'
 import styles from './page.module.css'
 
@@ -5,6 +6,14 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <header className={styles.header}>
+        <Image
+          src="/logo.svg"
+          alt="<💚> Support-OSS"
+          width={120}
+          height={50}
+          className={styles.logo}
+          priority
+        />
         <h1 className={styles.title}>Support-OSS</h1>
         <p className={styles.tagline}>
           A sustainability radar for open source — helping developers know where their donations

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 100">
+  <!-- 
+    Clean logo: < 💚 >
+    Monospace-style brackets with consistent weight
+    Clean solid green heart
+    Good spacing between elements
+  -->
+  
+  <!-- Left angle bracket < -->
+  <polygon 
+    points="55,50 20,20 20,12 62,44 62,56 20,88 20,80" 
+    fill="#e2e8f0"
+  />
+  
+  <!-- Green heart - clean, solid, emoji-style -->
+  <path 
+    d="M 120 82 
+       C 120 82, 80 50, 80 30 
+       C 80 15, 94 6, 108 6 
+       C 116 6, 120 13, 120 13 
+       C 120 13, 124 6, 132 6 
+       C 146 6, 160 15, 160 30 
+       C 160 50, 120 82, 120 82 Z" 
+    fill="#22c55e"
+  />
+  
+  <!-- Right angle bracket > -->
+  <polygon 
+    points="185,50 220,20 220,12 178,44 178,56 220,88 220,80" 
+    fill="#e2e8f0"
+  />
+</svg>
