@@ -1,0 +1,39 @@
+{
+  "name": "support-oss",
+  "version": "0.0.1",
+  "description": "CLI tool to analyze your dependencies and find open source projects that need support",
+  "type": "module",
+  "bin": {
+    "support-oss": "./dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean",
+    "dev": "tsup src/index.ts --format esm --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "commander": "^12.1.0",
+    "ora": "^8.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.7.3"
+  },
+  "keywords": [
+    "open-source",
+    "sustainability",
+    "dependencies",
+    "funding",
+    "oss"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/support-oss"
+  }
+}
