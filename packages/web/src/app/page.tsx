@@ -16,8 +16,7 @@ export default function Home() {
         />
         <h1 className={styles.title}>Support-OSS</h1>
         <p className={styles.tagline}>
-          A sustainability radar for open source — helping developers know where their donations
-          matter most.
+          Figure out where your open source donations will have the most impact.
         </p>
       </header>
 
@@ -31,7 +30,7 @@ export default function Home() {
             support-oss.dev
           </a>
           {' · '}
-          Open source sustainability starts with visibility.
+          Open source thrives when we support it together.
         </p>
       </footer>
     </main>

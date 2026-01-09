@@ -2,7 +2,7 @@
   "name": "support-oss",
   "version": "0.0.1",
   "private": true,
-  "description": "A sustainability radar for open source",
+  "description": "Open source donation calculator",
   "packageManager": "pnpm@9.15.4",
   "scripts": {
     "dev": "turbo dev",

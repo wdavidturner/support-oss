@@ -1,7 +1,7 @@
 {
   "name": "support-oss",
   "version": "0.0.1",
-  "description": "CLI tool to analyze your dependencies and find open source projects that need support",
+  "description": "CLI to figure out where your open source donations will have the most impact",
   "type": "module",
   "bin": {
     "support-oss": "./dist/index.js"

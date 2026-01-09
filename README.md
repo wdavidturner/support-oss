@@ -1,6 +1,6 @@
 # Support-OSS
 
-**A sustainability radar for open source — helping developers know where their donations matter most.**
+**Figure out where your open source donations will have the most impact.**
 
 [support-oss.dev](https://support-oss.dev)
 
